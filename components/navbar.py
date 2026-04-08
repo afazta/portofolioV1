@@ -37,5 +37,5 @@ class Navbar:
                 Div(cls="w-screen h-[.8px] bg-linear-to-r from-[#FF8A8A] via-[#8AEAFF] to-[#A294FF] relative"),
                 cls="relative"
             ),
-            cls="block w-screen flow-root fixed backdrop-blur-md bg-black/10 z-1 top-0"
+            cls="hidden md:block w-screen flow-root fixed backdrop-blur-md bg-black/10 z-1 top-0"
         )

@@ -26,7 +26,7 @@ def home():
         Navbar().run(),
         hero.run(),
         style="background-color: var(--main-black);",
-        cls="flex-col overflow-x-hidden"
+        cls="flex flex-col overflow-x-hidden"
     )
 
 serve(port=4000)
