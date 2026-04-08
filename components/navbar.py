@@ -2,18 +2,40 @@ from fasthtml.common import *
 
 class Navbar: 
     def __init__(self):
-        ...
+        self.listpage = [
+            {"title":"abouts","url":"#abouts"},
+            {"title":"skills","url":"#skills"},
+            {"title":"projects","url":"#projects"},
+            {"title":"contacts","url":"#about"},
+        ]
 
     def run(self):
         return Div(
             Div(
                 Div(
-                    P("Hello"),
-                    cls="flex items-center justify-center",
-                    style="color: var(--main-gray-light);"
+                    Div(
+                        H3(
+                            "Me.",
+                            cls="domine-400 text-white text-[20px] cursor-pointer antialiased appearance-none"
+                        ),
+                        cls="mr-auto"
+                    ),
+                    Div(
+                        
+                            (P(d["title"].capitalize(),
+                            cls="text-[13px] jetbrains-mono-400 cursor-pointer antialiased appearance-none text-[#888888] hover:text-white",
+                            )
+                            for d in self.listpage),
+                        cls="flex items-center justify-beetwen gap-6 ml-auto"
+                    ),
+                    cls="flex items-center",
                 ),
-                cls="flow-root w-full p-2"
+                cls="flow-root w-full p-10 py-3"
             ),
-            Div(cls="w-screen h-1 bg-linear-to-r from-[#FF8A8A] via-[#8AEAFF] to-[#A294FF]"),
-            cls="block w-full flow-root"
+            Div(
+                # Div(cls="w-screen h-5 bg-linear-to-r from-[#FF8A8A] via-[#8AEAFF] to-[#A294FF] absolute -inset-2 opacity-40 rounded blur-xl translate-y-6"),
+                Div(cls="w-screen h-[.8px] bg-linear-to-r from-[#FF8A8A] via-[#8AEAFF] to-[#A294FF] relative"),
+                cls="relative"
+            ),
+            cls="block w-screen flow-root fixed backdrop-blur-md bg-black/10 z-1 top-0"
         )

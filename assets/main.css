@@ -51,6 +51,13 @@
   font-style: normal;
 }
 
+.jetbrains-mono-700 {
+  font-family: "JetBrains Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
 
 ::-webkit-scrollbar { width: 4px; }
 ::-webkit-scrollbar-track { background: #0f0f0f; }
