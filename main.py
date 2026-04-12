@@ -1,7 +1,7 @@
 from fasthtml.common import *
 
-from components.hero import Hero
-from components.navbar import Navbar
+from pages.home import Home
+from pages.navbar import Navbar
 
 app,rt = fast_app(
     title="Afazta",
@@ -14,18 +14,33 @@ app,rt = fast_app(
     static_path="assets"
     )
 
-hero = Hero()
+home = Home()
+navbar = Navbar()
+pagecomp = [
+            {"title":"abouts","url":"/abouts"},
+            {"title":"skills","url":"/skills"},
+            {"title":"projects","url":"/projects"},
+            {"title":"contacts","url":"/about"},
+        ]
+
+def layout(content):
+    return Body(
+        navbar.run(pagecomp),
+        content,
+        cls="flex flex-col overflow-hidden bg-(--main-black)"
+    )
 
 @rt("/tophero/{idx}/{alp}/{lent}/{typ}")
 def get(idx: int,alp: int,lent: int,typ: str):
-    return hero.getTopHero(idx,alp,lent,typ)
+    return home.getTopHero(idx,alp,lent,typ)
 
-@app.route("/")
-def home():
-    return Body(
-        Navbar().run(),
-        hero.run(),
-        cls="flex flex-col overflow-hidden bg-(--main-black)"
-    )
+for p in pagecomp:
+    @rt(p["url"])
+    def get():
+        return layout(P(p["title"],cls="text-white"))
+
+@rt("/")
+def get():
+    return layout(home.run())
 
 serve(port=4000)

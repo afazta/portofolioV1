@@ -2,30 +2,25 @@ from fasthtml.common import *
 
 class Navbar: 
     def __init__(self):
-        self.listpage = [
-            {"title":"abouts","url":"#abouts"},
-            {"title":"skills","url":"#skills"},
-            {"title":"projects","url":"#projects"},
-            {"title":"contacts","url":"#about"},
-        ]
+        ...
 
-    def run(self):
+    def run(self,listpage):
         return Div(
             Div(
                 Div(
                     Div(
                         H3(
-                            "Me.",
-                            cls="domine-400 text-white text-[20px] cursor-pointer antialiased appearance-none"
+                            A("Me.",href="/"),
+                            cls="domine-400 text-white text-[20px] cursor-pointer antialiased appearance-none",
                         ),
                         cls="mr-auto"
                     ),
                     Div(
                         
-                            (P(d["title"].capitalize(),
-                            cls="text-[13px] jetbrains-mono-400 cursor-pointer antialiased appearance-none text-[#888888] hover:text-white",
+                            (P(A(d["title"].capitalize(),href=d["url"]),
+                            cls="text-[13px] jetbrains-mono-400 cursor-pointer antialiased appearance-none text-[#888888] hover:text-white"
                             )
-                            for d in self.listpage),
+                            for d in listpage),
                         cls="flex items-center justify-beetwen gap-6 ml-auto"
                     ),
                     cls="flex items-center",
