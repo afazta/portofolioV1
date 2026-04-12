@@ -66,14 +66,14 @@ class Hero:
                 cls="size-65 md:size-115 lg:size-150 rounded-full bg-conic-180 from-indigo-600 via-indigo-50 to-indigo-600 my-auto translate-x-30 lg:translate-x-35 blur-[35px] md:blur-[60px]  lg:blur-[70px] ml-auto opacity-30 lg:opacity-30 absolute -inset-2 will-change-[filter]"
             ),
             Div(
-                cls="  h-full dots absolute -inset-2 opacity-50"
+                cls="h-full dots absolute -inset-2 opacity-50"
             ),
             Div(
                 self.sideLeft(),
                 self.sideRight(),
                 cls="flex flex-row lg:mx-auto p-8 md:p-14 lg:p-20 items-center lg:justify-around h-full relative"
             ),
-            cls="flow-root relative overflow-hidden w-screen h-screen"
+            cls="relative z-1 overflow-hidden w-screen h-screen"
             )
     
     def sideLeft(self):
