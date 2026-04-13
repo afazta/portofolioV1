@@ -1,5 +1,4 @@
 import time
-
 from fasthtml.common import *
 
 class Home:
@@ -56,24 +55,9 @@ class Home:
     
     def run(self):
         return Div(
-            Div(
-                cls="size-65 md:size-115 lg:size-150 rounded-full bg-conic-180 from-red-600 via-red-50 to-red-600 -translate-x-8 -translate-y-14 lg:-translate-x-24 lg:-translate-y-20 blur-[35px] md:blur-[60px] md:-translate-y-20 md:-translate-x-10 lg:blur-[70px] opacity-30 mr-auto lg:opacity-30 absolute -inset-2 will-change-[filter]"
-            ),
-            Div(
-                cls="size-65 md:size-115 lg:size-150 rounded-full bg-conic-180 from-blue-600 via-blue-50 to-blue-600 -translate-x-20 lg:-translate-x-70 translate-y-20 lg:translate-y-80 mt-auto blur-[35px] md:blur-[60px] md:-translate-x-40 md:translate-y-30 lg:blur-[70px] mx-auto opacity-30 lg:opacity-30 absolute -inset-2 will-change-[filter]"
-            ),
-            Div(
-                cls="size-65 md:size-115 lg:size-150 rounded-full bg-conic-180 from-indigo-600 via-indigo-50 to-indigo-600 my-auto translate-x-30 lg:translate-x-35 blur-[35px] md:blur-[60px]  lg:blur-[70px] ml-auto opacity-30 lg:opacity-30 absolute -inset-2 will-change-[filter]"
-            ),
-            Div(
-                cls="h-full dots absolute -inset-2 opacity-50"
-            ),
-            Div(
                 self.sideLeft(),
                 self.sideRight(),
-                cls="flex flex-row lg:mx-auto p-8 md:p-14 lg:p-20 items-center lg:justify-around h-full relative"
-            ),
-            cls="relative z-1 overflow-hidden w-screen h-screen"
+                cls="flex flex-row lg:mx-auto p-8 md:p-14 lg:p-20 items-center lg:justify-around w-full h-full relative"
             )
     
     def sideLeft(self):
