@@ -29,8 +29,8 @@ class Navbar:
             ),
             Div(
                 # Div(cls="w-screen h-5 bg-linear-to-r from-[#FF8A8A] via-[#8AEAFF] to-[#A294FF] absolute -inset-2 opacity-40 rounded blur-xl translate-y-6"),
-                Div(cls="w-screen h-[.8px] bg-linear-to-r from-[#FF8A8A] via-[#8AEAFF] to-[#A294FF] relative"),
+                # Div(cls="w-screen h-[.8px] bg-linear-to-r from-[#FF8A8A] via-[#8AEAFF] to-[#A294FF] relative"),
                 cls="relative"
             ),
-            cls="hidden md:block w-screen flow-root fixed backdrop-blur-md bg-black/10 z-10 top-0"
+            cls="hidden md:block w-screen flow-root fixed z-10 bottom-0"
         )

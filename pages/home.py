@@ -74,7 +74,7 @@ class Home:
                     style="color: var(--main-gray-light)"
                 ),
                 P(
-                    "Change path to explore ↑",
+                    "Change path to explore ↓",
                     cls="jetbrains-mono-400 text-[10px] md:text-[11px] lg:text-[14px] antialiased appearance-none translate-y-10 lg:translate-y-12 lg:w-sm",
                     style="color: var(--main-gray-light)"
                 ),
