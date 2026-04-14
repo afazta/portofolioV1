@@ -57,7 +57,7 @@ class Home:
         return Div(
                 self.sideLeft(),
                 self.sideRight(),
-                cls="flex flex-row lg:mx-auto p-8 md:p-14 lg:p-20 items-center lg:justify-around w-full h-full relative"
+                cls="flex flex-row lg:mx-auto p-5 pb-24 md:pb-14 lg:pb-20 md:p-14 lg:p-20 items-center lg:justify-around w-full h-full relative"
             )
     
     def sideLeft(self):

@@ -3,6 +3,7 @@ from fasthtml.common import *
 from pages.blank import Blank
 from pages.home import Home
 from pages.navbar import Navbar
+from pages.projects import Projects
 
 app,rt = fast_app(
     title="Afazta",
@@ -20,7 +21,7 @@ navbar = Navbar()
 pagecomp = [
             {"title":"abouts","url":"/abouts","page":None},
             {"title":"skills","url":"/skills","page":None},
-            {"title":"projects","url":"/projects","page":None},
+            {"title":"projects","url":"/projects","page":Projects},
             {"title":"blogs","url":"/blogs","page":None},
         ]
 
@@ -65,13 +66,15 @@ def get(idx: int,alp: int,lent: int,typ: str):
     return home.getTopHero(idx,alp,lent,typ)
 
 for pg in pagecomp:
-    @rt(pg["url"])
-    def get():
-        if pg["page"]:
-            return layout(
-                pg["page"]
-            )
-        else: return layout(Blank().run())
+    def make_page(p):
+        @rt(p["url"])
+        def get():
+            if p["page"]:
+                return layout(
+                    p["page"]().run()
+                )
+            else: return layout(Blank().run())
+    make_page(pg)
 
 @rt("/")
 def get():
