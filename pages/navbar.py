@@ -22,7 +22,7 @@ class Navbar:
                         for d in listpage),
                     cls="flex items-center justify-beetwen gap-3 md:gap-6 ml-auto"
                 ),
-            cls=" w-full p-5 md:p-10 py-3 flex items-center"
+            cls=" w-full px-5 md:px-10 py-2 flex items-center"
             ),
             cls="block w-screen h-fit fixed z-10 bottom-0"
         )
