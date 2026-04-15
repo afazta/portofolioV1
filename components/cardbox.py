@@ -17,9 +17,9 @@ class CardBox:
                     href=url, 
                     cls="""mt-4 w-full text-center py-3 rounded-sm bg-white/10 text-white 
                             jetbrains-mono-500 border border-white/20 hover:bg-white/20 
-                            transition-all duration-300 antialiased appearance-none text-[16px] md:text-[20px]"""),
+                            transition-all duration-200 antialiased appearance-none text-[16px] md:text-[20px]"""),
                     
                     cls="flex flex-col gap-3 items-start"
                 ),
-                cls="flex flex-col overflow-hidden rounded-md backdrop-blur-md bg-(--main-gray-mid)/15 border border-white/10 w-full max-w-[500px] h-fit mx-auto px-4 md:px-6 py-4 md:py-6 gap-5 group"
+                cls="flex flex-col overflow-hidden rounded-md backdrop-blur-md bg-(--main-gray-mid)/15 border border-white/10 hover:border-white/30 hover:bg-(--main-gray-mid)/35 transition-all duration-200 w-full max-w-[500px] h-fit mx-auto px-4 md:px-6 py-4 md:py-6 gap-5 group"
             )

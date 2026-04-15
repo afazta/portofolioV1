@@ -16,7 +16,7 @@ class Projects:
                 Div(
                     H1("Selected Projects", cls="text-white jetbrains-mono-700 text-3xl md:text-5xl tracking-tighter"),
                     Span("A showcase of my recent work and experiments.", cls="text-(--main-gray-light) jetbrains-mono-400 text-sm md:text-base"),
-                    cls="space-y-2 mb-12 my-4 md:mb-0 md:my-0 border-l-4 border-white/10 pl-4" # 
+                    cls="space-y-2 mb-12 my-4 md:mb-0 md:my-0 border-l-4 border-white/10 pl-4"
                 ),
             ),
             Div(

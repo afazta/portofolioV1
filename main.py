@@ -1,5 +1,6 @@
 from fasthtml.common import *
 
+from pages.about import About
 from pages.blank import Blank
 from pages.home import Home
 from pages.navbar import Navbar
@@ -19,7 +20,7 @@ app,rt = fast_app(
 home = Home()
 navbar = Navbar()
 pagecomp = [
-            {"title":"abouts","url":"/abouts","page":None},
+            {"title":"abouts","url":"/abouts","page":About},
             {"title":"skills","url":"/skills","page":None},
             {"title":"projects","url":"/projects","page":Projects},
             {"title":"blogs","url":"/blogs","page":None},
