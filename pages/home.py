@@ -9,6 +9,7 @@ class Home:
             "Arduino & Robotics hobbyist", 
             "Turning code into hardware", 
             "Editing & Creative mind", 
+            "Open-source project interest",
             "Just for fun"
         ]
     
