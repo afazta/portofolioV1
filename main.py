@@ -22,8 +22,8 @@ navbar = Navbar()
 pagecomp = [
             {"title":"abouts","url":"/abouts","page":About},
             {"title":"projects","url":"/projects","page":Projects},
-            {"title":"skills","url":"/skills","page":None},
             {"title":"blogs","url":"/blogs","page":None},
+            {"title":"connects","url":"/connects","page":None},
         ]
 
 clickplay = Script("""
