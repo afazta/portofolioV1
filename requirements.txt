@@ -1,0 +1,2 @@
+python-dotenv==1.2.2
+python-fasthtml==0.13.3
