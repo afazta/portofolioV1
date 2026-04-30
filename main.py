@@ -5,6 +5,7 @@ from pages.blank import Blank
 from pages.home import Home
 from pages.navbar import Navbar
 from pages.projects import Projects
+from pages.build import Build
 
 app,rt = fast_app(
     title="Afazta",
@@ -23,7 +24,7 @@ pagecomp = [
             {"title":"abouts","url":"/abouts","page":About},
             {"title":"projects","url":"/projects","page":Projects},
             {"title":"blogs","url":"/blogs","page":None},
-            {"title":"connects","url":"/connects","page":None},
+            {"title":"builds","url":"/builds","page":Build},
         ]
 
 clickplay = Script("""
