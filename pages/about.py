@@ -55,7 +55,7 @@ class About:
                             cls="flex items-center gap-2 bg-(--main-gray-dark) px-4 py-2 rounded border border-(--main-gray-mid) jetbrains-mono-400 text-xs text-white hover:border-(--main-blue) transition-all"),
                         
                         cls="flex flex-wrap justify-center gap-3"
-                    )
+                    ),
                     cls="mb-6"
                 ),
                 cls="w-full max-w-4xl"
