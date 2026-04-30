@@ -19,6 +19,7 @@ app,rt = fast_app(
     )
 
 handler = app
+application = app
 
 home = Home()
 navbar = Navbar()
