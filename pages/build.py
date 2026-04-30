@@ -17,22 +17,18 @@ class Build:
                     cls="text-white whitespace-pre-line domine-700 text-4xl md:text-6xl tracking-tight",
                     ),
                 Div(
-                    Div(
+                    A(Div(
                         Img(src="https://cdn.simpleicons.org/github/888888", cls="w-4 h-4"),
                         Span("Github ↗", cls="text-(--main-gray-light) jetbrains-mono-400 text-xs md:text-sm"),
-                        cls="flex items-center gap-2"),
-                    Div(
+                        cls="flex items-center gap-2"),href="https://github.com/afazta"),
+                    A(Div(
                         Img(src="https://cdn.simpleicons.org/instagram/888888", cls="w-4 h-4"),
                         Span("Instagram ↗", cls="text-(--main-gray-light) jetbrains-mono-400 text-xs md:text-sm"),
-                        cls="flex items-center gap-2"),
-                    Div(
+                        cls="flex items-center gap-2"),href="https://www.instagram.com/kawenzy_"),
+                    A(Div(
                         Img(src="https://cdn.simpleicons.org/codeberg/888888", cls="w-4 h-4"),
                         Span("Codeberg ↗", cls="text-(--main-gray-light) jetbrains-mono-400 text-xs md:text-sm"),
-                        cls="flex items-center gap-2"),
-                    Div(
-                        Img(src="https://cdn.simpleicons.org/upwork/888888", cls="w-4 h-4"),
-                        Span("Upwork ↗", cls="text-(--main-gray-light) jetbrains-mono-400 text-xs md:text-sm"),
-                        cls="flex items-center gap-2"),
+                        cls="flex items-center gap-2"),href="https://codeberg.org/afazta/"),
                     cls="flex flex-wrap justify-center gap-5 mt-4"
                 ),
                 cls="mb-10 text-center"
@@ -42,14 +38,14 @@ class Build:
                 cls="mb-12"
             ),
             Div(
-                Button(
+                A(Button(
                     "AFAZTA@PROTON.ME",
                     cls="px-4 py-2 jetbrains-mono-600 cursor-pointer text-sm text-white rounded backdrop-blur-md bg-(--main-gray-mid)/15 border border-white/10 hover:border-white/30 hover:bg-(--main-gray-mid)/35 transition-all duration-200 w-fit"
-                ),
-                Button(
+                ),href="mailto:afazta@proton.me"),
+                A(Button(
                     "DOWNLOAD CV",
                     cls="px-4 py-2 jetbrains-mono-600 cursor-pointer text-sm text-white rounded backdrop-blur-md bg-(--main-gray-mid)/15 border border-white/10 hover:border-white/30 hover:bg-(--main-gray-mid)/35 transition-all duration-200 w-fit"
-                ),
+                ),href="https://drive.google.com/file/d/1Lc3sHD86-QQ7ov2TBWXAAC4faMC-lBmj/view?usp=drive_link"),
                 cls="flex flex-wrap justify-center gap-3"
             ),
             cls="flex flex-col items-center justify-center min-h-screen m-auto p-6 md:p-14 container relative w-full overflow-hidden"
