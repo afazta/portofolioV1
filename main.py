@@ -1,12 +1,5 @@
 from fasthtml.common import *
 
-from pages.about import About
-from pages.blank import Blank
-from pages.home import Home
-from pages.navbar import Navbar
-from pages.projects import Projects
-from pages.build import Build
-
 app,rt = fast_app(
     title="Afazta",
     hdrs=(
@@ -16,6 +9,13 @@ app,rt = fast_app(
         ),
     static_path="assets",
     )
+
+from pages.about import About
+from pages.blank import Blank
+from pages.home import Home
+from pages.navbar import Navbar
+from pages.projects import Projects
+from pages.build import Build
 
 home = Home()
 navbar = Navbar()
