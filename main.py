@@ -10,12 +10,10 @@ from pages.build import Build
 app,rt = fast_app(
     title="Afazta",
     hdrs=(
-        picolink,
         Favicon("/favicon.png","/favicon.png"),
         Link(rel="stylesheet",href="/main.css"),
         Script(src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"),
         ),
-    # pico=true,
     static_path="assets",
     )
 
