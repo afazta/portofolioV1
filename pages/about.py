@@ -25,7 +25,7 @@ class About:
                             cls="flex items-center gap-2"),
                         cls="flex flex-wrap justify-center gap-5 mt-4"
                     ),
-                    cls="md:mb-10 text-center"
+                    cls="mb-5 md:mb-10 text-center"
                 ),                
                 Div(
                     P("""
@@ -38,7 +38,7 @@ class About:
                         I work on looking decent and easy to use.
                     """, cls="text-(--main-gray-light) jetbrains-mono-400 text-sm md:text-base leading-relaxed max-w-2xl mx-auto text-center"),
                     
-                    cls="md:mb-12"
+                    cls="mb-6 md:mb-12"
                 ),
                 Div(
                     P("Mainly working with:", cls="text-(--main-gray-light) jetbrains-mono-500 text-[10px] uppercase tracking-[0.3em] mb-6 text-center"),
