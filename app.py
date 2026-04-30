@@ -82,5 +82,5 @@ for pg in pagecomp:
 def get():
     return layout(home.run())
 
-if __name__ == "__app__":
+if __name__ == "__main__":
     serve()
