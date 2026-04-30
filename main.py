@@ -69,16 +69,16 @@ def layout(content):
 def get(idx: int,alp: int,lent: int,typ: str):
     return home.getTopHero(idx,alp,lent,typ)
 
-# for pg in pagecomp:
-#     def make_page(p):
-#         @rt(p["url"])
-#         def get():
-#             if p["page"]:
-#                 return layout(
-#                     p["page"]().run()
-#                 )
-#             else: return layout(Blank().run())
-#     make_page(pg)
+for pg in pagecomp:
+    def make_page(p):
+        @rt(p["url"])
+        def get():
+            if p["page"]:
+                return layout(
+                    p["page"]().run()
+                )
+            else: return layout(Blank().run())
+    make_page(pg)
 
 @rt("/")
 def get():
