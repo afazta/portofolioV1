@@ -56,7 +56,7 @@ class About:
                         
                         cls="flex flex-wrap justify-center gap-3"
                     ),
-                    cls="mb-6"
+                    cls="mb-12 md:mb-0"
                 ),
                 cls="w-full max-w-4xl"
             ),
