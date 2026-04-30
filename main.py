@@ -18,8 +18,8 @@ app,rt = fast_app(
     static_path="assets",
     )
 
-handler = app
-application = app
+# handler = app
+# application = app
 
 home = Home()
 navbar = Navbar()
