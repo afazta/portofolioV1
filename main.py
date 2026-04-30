@@ -18,6 +18,8 @@ app,rt = fast_app(
     static_path="assets",
     )
 
+handler = app
+
 home = Home()
 navbar = Navbar()
 pagecomp = [
