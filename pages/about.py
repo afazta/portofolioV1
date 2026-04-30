@@ -56,8 +56,9 @@ class About:
                         
                         cls="flex flex-wrap justify-center gap-3"
                     )
+                    cls="mb-6"
                 ),
                 cls="w-full max-w-4xl"
             ),
-            cls="flex flex-col items-center justify-center min-h-screen mb-10 md:mb-auto m-auto p-6 md:p-14 container relative w-full overflow-hidden"
+            cls="flex flex-col items-center justify-center min-h-screen m-auto p-6 md:p-14 container relative w-full overflow-hidden"
         )
