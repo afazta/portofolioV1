@@ -44,15 +44,15 @@ class About:
                     P("Mainly working with:", cls="text-(--main-gray-light) jetbrains-mono-500 text-[10px] uppercase tracking-[0.3em] mb-6 text-center"),
                     Div(
                         Div(Img(src="https://cdn.simpleicons.org/python/8AEAFF", cls="w-5 h-5"), Span("Python"), 
-                            cls="flex items-center gap-2 bg-(--main-gray-dark) px-4 py-2 rounded border border-(--main-gray-mid) jetbrains-mono-400 text-xs text-white hover:border-(--main-blue) transition-all"),
+                            cls="flex items-center gap-2 backdrop-blur-md bg-(--main-gray-mid)/15 hover:bg-(--main-gray-mid)/35 px-4 py-2 rounded border border-(--main-gray-mid) jetbrains-mono-400 text-xs text-white hover:border-(--main-blue) transition-all"),
                         Div(Img(src="https://cdn.simpleicons.org/dart/8AEAFF", cls="w-5 h-5"), Span("Dart/Flutter"), 
-                            cls="flex items-center gap-2 bg-(--main-gray-dark) px-4 py-2 rounded border border-(--main-gray-mid) jetbrains-mono-400 text-xs text-white hover:border-(--main-blue) transition-all"),
+                            cls="flex items-center gap-2 backdrop-blur-md bg-(--main-gray-mid)/15 hover:bg-(--main-gray-mid)/35 px-4 py-2 rounded border border-(--main-gray-mid) jetbrains-mono-400 text-xs text-white hover:border-(--main-blue) transition-all"),
                         Div(Img(src="https://cdn.simpleicons.org/typescript/8AEAFF", cls="w-5 h-5"), Span("TypeScript"), 
-                            cls="flex items-center gap-2 bg-(--main-gray-dark) px-4 py-2 rounded border border-(--main-gray-mid) jetbrains-mono-400 text-xs text-white hover:border-(--main-blue) transition-all"),
+                            cls="flex items-center gap-2 backdrop-blur-md bg-(--main-gray-mid)/15 hover:bg-(--main-gray-mid)/35 px-4 py-2 rounded border border-(--main-gray-mid) jetbrains-mono-400 text-xs text-white hover:border-(--main-blue) transition-all"),
                         Div(Img(src="https://cdn.simpleicons.org/zig/8AEAFF", cls="w-5 h-5"), Span("Zig"), 
-                            cls="flex items-center gap-2 bg-(--main-gray-dark) px-4 py-2 rounded border border-(--main-gray-mid) jetbrains-mono-400 text-xs text-white hover:border-(--main-blue) transition-all"),
+                            cls="flex items-center gap-2 backdrop-blur-md bg-(--main-gray-mid)/15 hover:bg-(--main-gray-mid)/35 px-4 py-2 rounded border border-(--main-gray-mid) jetbrains-mono-400 text-xs text-white hover:border-(--main-blue) transition-all"),
                         Div(Img(src="https://cdn.simpleicons.org/arduino/8AEAFF", cls="w-5 h-5"), Span("Arduino"), 
-                            cls="flex items-center gap-2 bg-(--main-gray-dark) px-4 py-2 rounded border border-(--main-gray-mid) jetbrains-mono-400 text-xs text-white hover:border-(--main-blue) transition-all"),
+                            cls="flex items-center gap-2 backdrop-blur-md bg-(--main-gray-mid)/15 hover:bg-(--main-gray-mid)/35 px-4 py-2 rounded border border-(--main-gray-mid) jetbrains-mono-400 text-xs text-white hover:border-(--main-blue) transition-all"),
                         
                         cls="flex flex-wrap justify-center gap-3"
                     )
