@@ -83,4 +83,4 @@ def get():
     return layout(home.run())
 
 if __name__ == "__main__":
-    serve()
+    serve(app='app')
